@@ -1,0 +1,328 @@
+/* Global Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.nav-bar .brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar ul li {
+    position: relative;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+.nav-bar ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+
+.nav-bar i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .image img {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about .image:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+    cursor: pointer;
+}
+
+.about .details {
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.details .h1 {
+    color: crimson;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.details p {
+    font-size: 1.2rem;
+    color: black;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+/* Projects Section */
+.projects {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+
+.project1, .project2 {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    background-color: rgb(238, 208, 245);
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project1:hover, .project2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.projects h3 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.project p {
+    text-align: justify;
+}
+
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-container > div {
+    flex: 1;
+    min-width: 300px;
+    height: 150px;
+    background-color: rgb(238, 208, 245);
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    text-align: justify;
+}
+
+.skills-container > div:hover {
+    transform: scale(1.05);
+}
+
+.skills h3 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-container ul li {
+    font-size: 1.1rem;
+}
+
+/* Certifications Section */
+.certifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.certifications h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cert-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgb(238, 208, 245);
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.cert-container:hover {
+    transform: scale(1.05);
+}
+
+.cert-container h3 {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Profile Section */
+.profile-container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+section {
+    /* background:rgb(238, 208, 245); */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contact a {
+    color: #0077b5; /* LinkedIn color */
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
